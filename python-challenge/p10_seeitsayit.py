@@ -2,23 +2,13 @@ __author__ = 'julenka'
 # compute see it say it sequence
 # 1, 11, 21, 1211, 111211, 311221, 13212211, 111212112211, 31121112212211
 
+from itertools import groupby
 
-cur = '11'
-result = []
-for i in range(29):
-    counts = []
-    v = cur[0]
-    c = 1
-    for j in cur[1:]:
-        if j != v:
-            counts.extend([str(c), v])
-            v = j
-            c = 0
-        c += 1
-    counts.extend([str(c),v])
-    cur = ''.join(counts)
+cur, result = '1',[]
+for i in xrange(31):
     result.append(cur)
+    cur = ''.join([str(len(list(g))) + k for k,g in groupby(cur)])
 
 print result
-print len(result[28])
+print len(result[30])
 

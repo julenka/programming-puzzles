@@ -28,7 +28,7 @@ second = [156,141,165,135,169,131,176,130,187,134,191,140,191,146,186,150,179,15
 def getSVGPathStr(lst):
     pts = [lst[i:i+2] for i in range(0, len(lst),2)]
     pts_str = ["%d,%d"%(x,y) for x,y in pts]
-    # push this guy through snap svg...
+
     return 'M%sL'%pts_str[0] + 'L'.join(pts_str[1:])
 
 print getSVGPathStr(first)
