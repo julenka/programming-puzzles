@@ -1,0 +1,17 @@
+Valleyview Presbyterian Chislett St 8 t s i      e
+Artist and Craftsman Supply Imperial Dr 8 l d i (n|a|d)
+Congregation Poale Zedeck Crombie St 2 r o c     n
+Afro American Music Institute Kelly St 0 ? k a   a
+New Amsterdam Mural Eden Way 1 e d b             e
+Temple Sinai Aylesboro Ave 3 l e d               p
+
+sdokde
+
+0 Kelly
+1 Eden
+2 Crombie
+3 Aylesboro
+8 Chislett St
+8 Imperial
+
+keyword: VACANT
