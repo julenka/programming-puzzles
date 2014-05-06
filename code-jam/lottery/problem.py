@@ -35,44 +35,22 @@ def solve_case_helper(a, b, k):
 
     a_ones = (1 << a.empty_bits) - 1
     b_ones = (1 << b.empty_bits) - 1
-    max_a = min(a.maxval, a.cur + a_ones)
-    max_b = min(b.maxval, b.cur + b_ones)
+    max_a = a.cur + a_ones
+    max_b = b.cur + b_ones
     if max_a & max_b < k:
         # If the largest possible value we can achieve is already less than k, we can also stop early.
         # however, we need to be careful about how many valid solutions are below this number
-        a_f = ((max_a & a_ones) + (1 if max_a < a.maxval else 0))
-        b_f = ((max_b & b_ones) + (1 if max_b < b.maxval else 0))
-        result =  a_f * b_f
+        a_f = a_ones + 1
+        b_f = b_ones + 1
+        if a.maxval <= max_a:
+            a_f = a.maxval & a_ones
+        if b.maxval <= max_b:
+            b_f = b.maxval & b_ones
 
-        # feeble attempts at debgging...
-        # if(max_a != a.cur + a_ones or max_b != b.cur + b_ones):
-        #     a_bin = bin(a.cur)
-        #     b_bin = bin(b.cur)
-        #     print "a: %s,%s b: %s,%s" % (a_bin[:-a.empty_bits]+'_'+a_bin[-a.empty_bits:], bin(max_a), b_bin[:-b.empty_bits]+'_'+b_bin[-b.empty_bits:], bin(max_b))
-        #     print'kill early %d * %d = %d' %(a_f, b_f, a_f * b_f)
-
-        return result
-
-    # cases to cover:
-    # add '0' to a, add '0' to b
-    # add '1' to a, add '0' to b
-    # add '0' to a, add '1' to b
-    # add '1' to a, add '1' to b
-    # need to also properly handle case if a or b have no more empty bits
-    # a0 and b0 mean 'we add a 0 to the end of our current solution'
-    # a1 and b1 mean 'we add a 1 to the end of our current solution'
+        return a_f * b_f
 
     b0 = State(b.maxval, b.cur, b.empty_bits - 1)
     a0 = State(a.maxval, a.cur, a.empty_bits - 1)
-
-    if(a.empty_bits == 0):
-        b1 = State(b.maxval, b.cur + (1 << (b.empty_bits - 1)), b.empty_bits - 1)
-        return solve_case_helper(a, b0, k) + solve_case_helper(a, b1, k)
-
-    if (b.empty_bits == 0):
-        a1 = State(a.maxval, a.cur + (1 << (a.empty_bits - 1)), a.empty_bits - 1)
-        return solve_case_helper(a0, b, k) + solve_case_helper(a1, b, k)
-
     b1 = State(b.maxval, b.cur + (1 << (b.empty_bits - 1)), b.empty_bits - 1)
     a1 = State(a.maxval, a.cur + (1 << (a.empty_bits - 1)), a.empty_bits - 1)
     return solve_case_helper(a0, b1, k) + solve_case_helper(a0, b0, k) + solve_case_helper(a1, b0, k ) + solve_case_helper(a1, b1, k)
@@ -80,8 +58,7 @@ def solve_case_helper(a, b, k):
 
 def solve_case_single(line):
     a,b,k = [int(x) for x in line.split(' ')]
-    a_hibit = int(math.log(a,2))
-    b_hibit = int(math.log(b,2))
+    a_hibit, b_hibit = 32, 32
     return solve_case_helper(State(a, 1 << a_hibit, a_hibit), State(b, 0, b_hibit), k) + \
         solve_case_helper(State(a, 1 << a_hibit, a_hibit), State(b, 1 << b_hibit, b_hibit), k) + \
         solve_case_helper(State(a, 0, a_hibit), State(b, 0, b_hibit), k) + \
@@ -90,8 +67,8 @@ def solve_case_single(line):
 # config
 letter = 'B'
 # size = 'small'
-size = 'tiny'
-# size = 'large'
+# size = 'tiny'
+size = 'large'
 input = '%s-%s-practice.in' % (letter,size)
 output = input.replace('.in', '.out')
 lines = (line.strip() for line in open(input).readlines())
