@@ -1,12 +1,16 @@
 __author__ = 'julenka'
 
 # url to the problem goes here
+import numpy as np
 
 def solve_case_multi(lines):
-    return None
+    A = list(reversed(sorted([int(x) for x in lines[0].split(' ')])))
+    B = list(sorted([int(x) for x in lines[1].split(' ')]))
+    result = 0
+    for i in range(len(A)):
+        result += A[i] * B[i]
+    return result
 
-def solve_case_single(line):
-    return None
 
 # config
 # letter = 'C'
@@ -14,7 +18,7 @@ def solve_case_single(line):
 letter = 'A'
 # size = 'small'
 size = 'large'
-size = 'tiny'
+# size = 'tiny'
 input = '%s-%s-practice.in' % (letter,size)
 output = input.replace('.in', '.out')
 lines = (line.strip() for line in open(input).readlines())
@@ -22,28 +26,14 @@ outf = open(output, 'w')
 num_cases = int(lines.next())
 
 
-# model 1:
-# lines
-# n_lines_for_case
-# line1
-# line2
-# ...
 for i in range(num_cases):
-    num_lines = int(lines.next())
+    num_lines = 2
+    lines.next()
     case_lines = []
     for j in range(num_lines):
         case_lines.append(lines.next())
     print "Case #%d: %s" % (i + 1, solve_case_multi(case_lines))
     print >> outf, "Case #%d: %s" % (i + 1, solve_case_multi(case_lines))
 
-# model 2:
-# lines
-# case1
-# case2
-# ...
-for i in range(num_cases):
-    line = lines.next()
-    print "Case #%d: %s" % (i + 1, solve_case_single(line))
-    print >> outf, "Case #%d: %s" % (i + 1, solve_case_single(line))
 
 
