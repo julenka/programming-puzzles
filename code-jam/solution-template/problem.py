@@ -33,8 +33,9 @@ for i in range(num_cases):
     case_lines = []
     for j in range(num_lines):
         case_lines.append(lines.next())
-    print "Case #%d: %s" % (i + 1, solve_case_multi(case_lines))
-    print >> outf, "Case #%d: %s" % (i + 1, solve_case_multi(case_lines))
+    result = solve_case_multi(case_lines)
+    print "Case #%d: %s" % (i + 1, result)
+    print >> outf, "Case #%d: %s" % (i + 1, result)
 
 # model 2:
 # lines
@@ -43,7 +44,8 @@ for i in range(num_cases):
 # ...
 for i in range(num_cases):
     line = lines.next()
-    print "Case #%d: %s" % (i + 1, solve_case_single(line))
-    print >> outf, "Case #%d: %s" % (i + 1, solve_case_single(line))
+    result = solve_case_single(line)
+    print "Case #%d: %s" % (i + 1, result)
+    print >> outf, "Case #%d: %s" % (i + 1, result)
 
 
