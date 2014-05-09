@@ -48,4 +48,6 @@ for i in range(num_cases):
     print "Case #%d: %s" % (i + 1, result)
     print >> outf, "Case #%d: %s" % (i + 1, result)
 
+# num_lines1, num_lines2 = [int(x) for x in lines.next().split(' ')]
+
 
