@@ -1,4 +1,4 @@
-package js.test;
+package js.interview.test;
 
 import js.interview.Searching;
 import junit.framework.Assert;

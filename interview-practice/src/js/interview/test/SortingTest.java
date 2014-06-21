@@ -1,8 +1,6 @@
-package js.test;
+package js.interview.test;
 
-import js.interview.Searching;
 import js.interview.Sorting;
-import junit.framework.Assert;
 import org.junit.Test;
 
 import java.util.*;
