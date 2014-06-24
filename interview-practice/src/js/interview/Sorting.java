@@ -62,4 +62,49 @@ public class Sorting {
         quicksortInPlaceHelper(values, start_index, less_than_ptr - 1);
         quicksortInPlaceHelper(values, greater_than_ptr + 1, end_index);
     }
+
+    public static ArrayList<Integer> mergeSort(ArrayList<Integer> values) {
+        if(values.size() <= 1) {
+            return values;
+        }
+        ArrayList<Integer> left = new ArrayList<Integer>();
+        ArrayList<Integer> right = new ArrayList<Integer>();
+        for(int i = 0; i < values.size() / 2; i++) {
+            left.add(values.get(i));
+            right.add(values.size() / 2 + i);
+        }
+        if(values.size() % 2 == 1) {
+            right.add(values.get(values.size() - 1));
+        }
+        left = mergeSort(left);
+        right = mergeSort(right);
+
+        ArrayList<Integer> result = new ArrayList<Integer>();
+        int leftIndex = 0;
+        int rightIndex = 0;
+        int leftValue = left.get(leftIndex);
+        int rightValue = right.get(rightIndex);
+        while(leftIndex < left.size() || rightIndex < right.size()) {
+            if(leftIndex >= left.size()) {
+                rightValue = result.get(rightIndex);
+                result.add(rightValue);
+                rightIndex++;
+                continue;
+            }
+            if(rightIndex >= right.size()) {
+                leftValue = result.get(leftIndex);
+                result.add(leftValue);
+                leftIndex++;
+                continue;
+            }
+            if(leftValue < rightValue) {
+                result.add(leftValue);
+                leftIndex++;
+            } else {
+                result.add(rightValue);
+                rightIndex++;
+            }
+        }
+        return result;
+    }
 }

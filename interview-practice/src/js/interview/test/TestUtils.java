@@ -28,6 +28,15 @@ public class TestUtils {
         return values;
     }
 
+    public static ArrayList<Integer> makeRandomList(int arraySize, boolean unique) {
+        int[] values = makeRandomArray(arraySize, unique);
+        ArrayList<Integer> result = new ArrayList<Integer>();
+        for(int i = 0; i < values.length; i++){
+            result.add(values[i]);
+        }
+        return result;
+    }
+
     public static void checkSorted(int[] result) {
         ArrayList<Integer> adapted = new ArrayList<Integer>();
         for(int i = 0; i < result.length; i++) {

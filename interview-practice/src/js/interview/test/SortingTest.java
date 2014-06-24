@@ -12,14 +12,15 @@ public class SortingTest {
 
     @Test
     public void testQuicksortRecursive() throws Exception {
-        ArrayList<Integer> values = new ArrayList<Integer>();
-        for(int i = 0; i < 1000; i++) {
-            values.add(TestUtils.r.nextInt(10000));
-        }
-        ArrayList<Integer> result = Sorting.quicksortRecursive(values);
-        TestUtils.checkSorted(result);
+        ArrayList<Integer> values = TestUtils.makeRandomList(1000, false);
+        TestUtils.checkSorted(Sorting.quicksortRecursive(values));
     }
 
+    @Test
+    public void testMergesort() throws Exception {
+        ArrayList<Integer> values = TestUtils.makeRandomList(1000, false);
+        TestUtils.checkSorted(Sorting.mergeSort(values));
+    }
 
     @Test
     public void testQuicksortInPlace() throws Exception {
