@@ -26,6 +26,10 @@ void create(LinkedList* lst);
 // Return true if success
 bool append(LinkedList* lst, int data);
 
+// Returns the element at index index
+// if index is invalid, returns null
+Element* elementAt(LinkedList* lst, int index);
+
 // Removes elem from lst
 // Returns true if success, false if element not found
 bool remove(LinkedList* lst, Element* elem);
@@ -39,3 +43,4 @@ void print(Element* head);
 
 // Destroys all elements in the list, freeing them
 void destroy(LinkedList* lst);
+
