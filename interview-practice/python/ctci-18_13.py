@@ -55,15 +55,22 @@ def getRowToWords(words):
                 row_to_words[row].append(word)
     return row_to_words
 
+cache = defaultdict(defaultdict)
+def getKeysFromTrie(trie, prefix, idx):
+    global cache
+    if idx not in cache[prefix]:
+        cache[prefix][idx] = set(word[idx] for word in trie.keys(prefix))
+    return cache[prefix][idx]
 
-def findLargestHelper(wordSquare, trie, row_to_words, row_to_words_trie, row, col):
+def findLargestHelper(wordSquare, trie, row_to_words, row, col):
     if(row >= wordSquare.size):
         return wordSquare
+    # print row, col
     # guess a value from set of words that are valid
     row_prefix = unicode(wordSquare.getRow(row))
-    possible_row_characters = set((word[col] for word in row_to_words_trie[row].keys(row_prefix)))
+    possible_row_characters = getKeysFromTrie(trie,row_prefix, col)
     col_prefix = unicode(wordSquare.getColumn(col))
-    possible_col_characters = set((word[row] for word in trie.keys(col_prefix)))
+    possible_col_characters = getKeysFromTrie(trie, col_prefix, row)
     possible_characters = possible_col_characters & possible_row_characters
     for c in possible_characters:
         wordSquare.setChar(row, col, c)
@@ -72,7 +79,7 @@ def findLargestHelper(wordSquare, trie, row_to_words, row_to_words_trie, row, co
         if(newCol >= wordSquare.size):
             newCol = 0
             newRow = row + 1
-        result = findLargestHelper(wordSquare, trie, row_to_words, row_to_words_trie, newRow, newCol)
+        result = findLargestHelper(wordSquare, trie, row_to_words, newRow, newCol)
         if(result):
             return result
     wordSquare.setChar(row, col, "")
@@ -95,8 +102,8 @@ def findLargestWordSquare(word_list_path):
 
     # go from larges to smallest word length...
     for word_length in word_lengths:
-        # if word_length > 5:
-        #     continue
+        if word_length > 7:
+            continue
         print word_length
         words = len_to_words[word_length]
         row_to_words = getRowToWords(words)
@@ -111,7 +118,7 @@ def findLargestWordSquare(word_list_path):
         # use the trie to quickly find words that share prefix
         trie =  Trie(words)
         wordSquare = WordSquare(word_length)
-        result = findLargestHelper(wordSquare, trie, row_to_words, row_to_words_trie, 0, 0)
+        result = findLargestHelper(wordSquare, trie, row_to_words, 0, 0)
         if(result):
             print result
             return
