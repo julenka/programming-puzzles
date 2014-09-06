@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4533e1d-bc63-4b5c-9937-70c00b4bb199" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interview-practice/python/ctci-18_11.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interview-practice/python/ctci-18_13.py" afterPath="$PROJECT_DIR$/interview-practice/python/ctci-18_13.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -26,12 +27,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ctci-18_13.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ctci-18_13.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interview-practice/python/ctci-18_13.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="0" selection-start="4334" selection-end="4334" vertical-scroll-proportion="0.5481928" vertical-offset="1587" max-vertical-offset="2085">
+            <state line="0" column="0" selection-start="0" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2235">
               <folding>
-                <element signature="e#163#198#0" expanded="true" />
+                <element signature="e#166#201#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ctci-18_11.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interview-practice/python/ctci-18_11.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="0" selection-start="413" selection-end="413" vertical-scroll-proportion="0.4036827" vertical-offset="0" max-vertical-offset="706">
+              <folding>
+                <element signature="e#252#262#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,7 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/python-challenge/p7_oxygen.py" />
         <option value="$PROJECT_DIR$/python-challenge/p8_integrity.py" />
         <option value="$PROJECT_DIR$/python-challenge/p9_good.txt" />
         <option value="$PROJECT_DIR$/python-challenge/p9_good.py" />
@@ -106,13 +117,14 @@
         <option value="$PROJECT_DIR$/so/imginterp.py" />
         <option value="$PROJECT_DIR$/higgsboson-kaggle/count_invalid.py" />
         <option value="$PROJECT_DIR$/interview-practice/python/ctci-18_13.py" />
+        <option value="$PROJECT_DIR$/interview-practice/python/ctci-18_11.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="874" />
+    <option name="width" value="1920" />
+    <option name="height" value="1174" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -162,7 +174,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -229,6 +240,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -352,7 +364,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="programming-puzzles" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interview-practice/python/ctci-18_13.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="PARAMETERS" value="/usr/share/dict/words 7" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
@@ -541,7 +553,11 @@
       <created>1409195760281</created>
       <updated>1409195760281</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="word square challenge code finds word squares but is iniefficient.">
+      <created>1409235473169</created>
+      <updated>1409235473169</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -565,24 +581,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1920" height="1174" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286445" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22250639" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3375959" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22269504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19591261" sideWeight="0.67172676" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32225063" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15271196" sideWeight="0.67172676" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3216266" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32736573" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32736573" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -603,9 +619,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13322802" sideWeight="0.67172676" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15157117" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -625,22 +641,18 @@
     <MESSAGE value="Adding in a few google code jam puzzles" />
     <MESSAGE value="python chllenge p16" />
     <MESSAGE value="Attempt 1 at word square challenge, failed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Attempt 1 at word square challenge, failed" />
+    <MESSAGE value="word square challenge code finds word squares but is iniefficient." />
+    <option name="LAST_COMMIT_MESSAGE" value="word square challenge code finds word squares but is iniefficient." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="34" />
+      <option name="time" value="40" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/python-challenge/p16_uzi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="188" selection-end="188" vertical-scroll-proportion="0.21042085" vertical-offset="0" max-vertical-offset="499" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code-jam/cheaters/cheaters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="59" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105" />
@@ -883,16 +895,23 @@
     </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm30/python_stubs/802780667/__builtin__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2405" column="8" selection-start="82491" selection-end="82491" vertical-scroll-proportion="0.33333334" vertical-offset="35799" max-vertical-offset="76485">
-          <folding />
-        </state>
+        <state line="2405" column="8" selection-start="82491" selection-end="82491" vertical-scroll-proportion="0.33333334" vertical-offset="35799" max-vertical-offset="76485" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interview-practice/python/ctci-18_13.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="0" selection-start="4334" selection-end="4334" vertical-scroll-proportion="0.5481928" vertical-offset="1587" max-vertical-offset="2085">
+        <state line="0" column="0" selection-start="0" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2235">
           <folding>
-            <element signature="e#163#198#0" expanded="true" />
+            <element signature="e#166#201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interview-practice/python/ctci-18_11.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="413" selection-end="413" vertical-scroll-proportion="0.4036827" vertical-offset="0" max-vertical-offset="706">
+          <folding>
+            <element signature="e#252#262#0" expanded="true" />
           </folding>
         </state>
       </provider>
