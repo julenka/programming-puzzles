@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="jquery.js"></script>
+    <script src="snap.svg.js"></script>
+    <script src="sylvester.js"></script>
+    <style>
+        svg {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+<h4>original path:</h4>
+<svg id="original"></svg>
+<h4>resampled path:</h4>
+<svg id="resampled"></svg>
+
+<script>
+    var original_pts = [];
+    var isDown = false;
+    var circle_radius = 5;
+    var resample_to = 500;
+
+    var dot_attrs = {
+        fill: "red"
+    };
+    var path_attrs = {
+        "fill-opacity": 0,
+        stroke: "black"
+    };
+    window.onload = function() {
+        var $original = $("#original");
+        var $resampled = $("#resampled");
+
+        var resampled_snap = Snap("#resampled");
+        var original_snap = Snap("#original");
+
+        $original.mousedown(function(e) {
+            isDown = true;
+            original_pts = [];
+            original_pts.push(getMouseCoordsRelativeTo(e, $original));
+            resampled_snap.clear();
+            original_snap.clear();
+        });
+
+        $original.mousemove(function(e) {
+            if(!isDown) {
+                return;
+            }
+            var coords = getMouseCoordsRelativeTo(e, $original);
+            original_pts.push(coords);
+            original_snap.circle(coords.x, coords.y, circle_radius).attr(dot_attrs);
+            if(original_pts.length > 1) {
+                var l = original_pts.length;
+                var p1 = original_pts[l - 1];
+                var p2 = original_pts[l - 2];
+                original_snap.line(p1.x, p1.y, p2.x, p2.y);
+            }
+        });
+
+        $original.mouseup(function() {
+            if(!isDown) {
+                return;
+            }
+            var resampled_pts = resample(original_pts, resample_to);
+            resampled_pts.forEach(function(pt) {
+                resampled_snap.circle(pt.x, pt.y, circle_radius).attr(dot_attrs);
+            });
+            var path_str = "M" + point2Str(resampled_pts[0]);
+            for(var i = 1; i < resampled_pts.length; i++) {
+                path_str += "L" + point2Str(resampled_pts[i]);
+            }
+            resampled_snap.path(path_str).attr(path_attrs);
+            isDown = false;
+        });
+    }
+
+    function makePoint(x, y) {
+        return {x: x, y: y};
+    }
+
+    /**
+     * returns a sylvestor vector from a point
+     */
+    function point2Vec(pt) {
+        return $V([pt.x, pt.y]);
+    }
+
+    function point2Str(pt) {
+        return pt.x + "," + pt.y;
+    }
+
+    function getMouseCoordsRelativeTo(e, relativeTo) {
+        var offset = relativeTo.offset();
+        return makePoint(e.pageX - offset.left, e.pageY - offset.top);
+    }
+
+    /**
+     * Returns the total length of a path
+     * @param pts [ {x: , y: }, {x: , y: } ]
+     */
+    function lengthOfPath(path_pts) {
+        var result = 0;
+        for(var i = 1; i < path_pts.length; i++) {
+            var prev = path_pts[i - 1];
+            var cur = path_pts[i];
+            result += lengthOfSegment(prev, cur);
+
+        }
+        return result;
+    }
+
+    function lengthOfSegment(pt1, pt2) {
+        // this uses the sylvester library to get distance
+        return point2Vec(pt1).distanceFrom(point2Vec(pt2));
+    }
+
+    /**
+     * Linearly interpolate 2 points by some amount
+     * @param p1 start point
+     * @param p2 end point
+     * @param amount amount to interpolate by
+     * @returns {*}
+     */
+    function lerp(p1, p2, amount) {
+        return makePoint(p1.x * (1 - amount) + p2.x * amount, p1.y * (1 - amount) + p2.y * amount);
+    }
+
+    function resample(pts, resample_to) {
+        var path_length = lengthOfPath(pts);
+        var segment_length = path_length / resample_to;
+        var result = [pts[0]];
+        var current_length = 0;
+
+        for(var i = 1; i < pts.length; i++) {
+            var prev = pts[i - 1];
+            var cur = pts[i];
+            var cur_segment_length = lengthOfSegment(prev, cur);
+            current_length += cur_segment_length;
+            while(current_length > segment_length) {
+                var interp_amount = (segment_length - (current_length - cur_segment_length)) / cur_segment_length;
+                var interp_pt = lerp(prev, cur, interp_amount);
+                result.push((interp_pt));
+                prev = interp_pt;
+                current_length = current_length - segment_length;
+            }
+        }
+
+        return result;
+    }
+</script>
+</body>
+</html>
