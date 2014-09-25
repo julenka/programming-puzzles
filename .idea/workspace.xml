@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e4533e1d-bc63-4b5c-9937-70c00b4bb199" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/path-resample/.idea/workspace.xml" afterPath="$PROJECT_DIR$/path-resample/.idea/workspace.xml" />
     </list>
     <ignored path="programming-puzzles.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +25,17 @@
     <favorites_list name="programming-puzzles" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="euler_utils.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project-euler/euler_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="147" column="14" selection-start="3417" selection-end="3427" vertical-scroll-proportion="0.30985916" vertical-offset="2036" max-vertical-offset="2790">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -42,8 +53,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/python-challenge/p8_integrity.py" />
-        <option value="$PROJECT_DIR$/python-challenge/p9_good.txt" />
         <option value="$PROJECT_DIR$/python-challenge/p9_good.py" />
         <option value="$PROJECT_DIR$/python-challenge/p10_seeitsayit.py" />
         <option value="$PROJECT_DIR$/python-challenge/p11_cave.py" />
@@ -93,6 +102,8 @@
         <option value="$PROJECT_DIR$/higgsboson-kaggle/count_invalid.py" />
         <option value="$PROJECT_DIR$/interview-practice/python/ctci-18_13.py" />
         <option value="$PROJECT_DIR$/interview-practice/python/ctci-18_11.py" />
+        <option value="$PROJECT_DIR$/project-euler/problem-51.py" />
+        <option value="$PROJECT_DIR$/project-euler/problem51.py" />
       </list>
     </option>
   </component>
@@ -219,27 +230,7 @@
       <recent name="$PROJECT_DIR$/code-jam/rotate" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ctci-18_13">
-    <configuration default="false" name="find_all" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ipsc/f_sudoku_pi" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="programming-puzzles" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ipsc/f_sudoku_pi/find_all.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.problem-51">
     <configuration default="false" name="l1_sound" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -311,6 +302,24 @@
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="problem-51" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project-euler" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="programming-puzzles" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project-euler/problem51.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -436,19 +445,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.find_all" />
-      <item index="1" class="java.lang.String" itemvalue="Python.l1_sound" />
-      <item index="2" class="java.lang.String" itemvalue="Python.earthMoonGravitationalPotential" />
-      <item index="3" class="java.lang.String" itemvalue="Python.imginterp" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ctci-18_13" />
+      <item index="0" class="java.lang.String" itemvalue="Python.l1_sound" />
+      <item index="1" class="java.lang.String" itemvalue="Python.earthMoonGravitationalPotential" />
+      <item index="2" class="java.lang.String" itemvalue="Python.imginterp" />
+      <item index="3" class="java.lang.String" itemvalue="Python.ctci-18_13" />
+      <item index="4" class="java.lang.String" itemvalue="Python.problem-51" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ctci-18_13" />
-        <item index="1" class="java.lang.String" itemvalue="Python.imginterp" />
-        <item index="2" class="java.lang.String" itemvalue="Python.earthMoonGravitationalPotential" />
-        <item index="3" class="java.lang.String" itemvalue="Python.l1_sound" />
-        <item index="4" class="java.lang.String" itemvalue="Python.find_all" />
+        <item index="0" class="java.lang.String" itemvalue="Python.problem-51" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ctci-18_13" />
+        <item index="2" class="java.lang.String" itemvalue="Python.imginterp" />
+        <item index="3" class="java.lang.String" itemvalue="Python.earthMoonGravitationalPotential" />
+        <item index="4" class="java.lang.String" itemvalue="Python.l1_sound" />
       </list>
     </recent_temporary>
   </component>
@@ -500,7 +509,11 @@
       <created>1409235473169</created>
       <updated>1409235473169</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adding project euler problem 51">
+      <created>1411622901090</created>
+      <updated>1411622901090</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -527,21 +540,21 @@
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286445" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286445" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3375959" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22269504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15221988" sideWeight="0.67172676" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3216266" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15221988" sideWeight="0.67172676" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32097188" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32736573" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286445" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -585,7 +598,8 @@
     <MESSAGE value="python chllenge p16" />
     <MESSAGE value="Attempt 1 at word square challenge, failed" />
     <MESSAGE value="word square challenge code finds word squares but is iniefficient." />
-    <option name="LAST_COMMIT_MESSAGE" value="word square challenge code finds word squares but is iniefficient." />
+    <MESSAGE value="Adding project euler problem 51" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding project euler problem 51" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -596,11 +610,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/code-jam/cheaters/cheaters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="59" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code-jam/repeater/A-small-practice.in">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="1" selection-start="0" selection-end="13896" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="4605" />
@@ -833,30 +842,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/interview-practice/python/ctci-18_11.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="276" selection-end="276" vertical-scroll-proportion="0.2188329" vertical-offset="0" max-vertical-offset="754">
-          <folding>
-            <element signature="e#252#262#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="11" column="13" selection-start="276" selection-end="276" vertical-scroll-proportion="0.2188329" vertical-offset="0" max-vertical-offset="754" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interview-practice/python/ctci-18_13.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2235">
-          <folding />
+        <state line="0" column="0" selection-start="0" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2235" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project-euler/projecteuler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="4" selection-start="2138" selection-end="2138" vertical-scroll-proportion="1.5182186" vertical-offset="0" max-vertical-offset="10200" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project-euler/problem51.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="34" selection-start="869" selection-end="869" vertical-scroll-proportion="0.12955466" vertical-offset="99" max-vertical-offset="840">
+          <folding>
+            <element signature="e#695#713#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project-euler/euler_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="18" selection-start="199" selection-end="199" vertical-scroll-proportion="0.2188329" vertical-offset="0" max-vertical-offset="2790">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project-euler/projecteuler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="4" selection-start="2138" selection-end="2138" vertical-scroll-proportion="1.5182186" vertical-offset="0" max-vertical-offset="10200">
+        <state line="147" column="14" selection-start="3417" selection-end="3427" vertical-scroll-proportion="0.30985916" vertical-offset="2036" max-vertical-offset="2790">
           <folding />
         </state>
       </provider>
