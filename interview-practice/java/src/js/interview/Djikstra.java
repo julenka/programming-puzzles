@@ -11,6 +11,7 @@ import java.util.Random;
  * Created by julenka on 10/6/14.
  */
 public class Djikstra extends PApplet {
+    static final boolean ROUND_EDGE_WEIGHTS = true;
     final int NODE_RADIUS = 10;
     final int NODE_SPACING = 100;
     final int NUM_ROWS = 5;
@@ -51,7 +52,7 @@ public class Djikstra extends PApplet {
             }
         }
 
-        // setup edges
+        // setup outgoingEdges
         for(int i = 0; i < nodes.size(); i++) {
             int r = i / NUM_COLS;
             int c = i % NUM_COLS;
@@ -74,7 +75,7 @@ public class Djikstra extends PApplet {
 
     private void reset() {
         for (Node node : nodes) {
-            for(Edge edge : node.edges) {
+            for(Edge edge : node.outgoingEdges) {
                 edge.weight = random.nextFloat() * 100;
             }
             node.weight = Float.MAX_VALUE;
@@ -95,7 +96,7 @@ public class Djikstra extends PApplet {
         // draw nodes
         for(Node n : nodes) {
 
-            for(Edge e : n.edges) {
+            for(Edge e : n.outgoingEdges) {
                 stroke(100);
                 line(e.from.x, e.from.y, e.to.x, e.to.y);
                 fill(255);
@@ -161,7 +162,7 @@ public class Djikstra extends PApplet {
         while(cur != null && unexploredNodes.size() > 0) {
             cur.setExplored();
             unexploredNodes.remove(cur);
-            for(Edge edge : cur.edges) {
+            for(Edge edge : cur.outgoingEdges) {
                 Node outgoing = edge.to;
                 // Ignore nodes that have been explored already
                 if(outgoing.explored) {
@@ -176,26 +177,23 @@ public class Djikstra extends PApplet {
 
         // set cheapest path
         cheapestPath.clear();
-        cur = getNode(START_R, START_C);
-        Node end = getNode(END_R, END_C);
-        while(cur != end) {
+        cur = getNode(END_R, END_C);
+        if(cur.weight == Float.MAX_VALUE) {
+            print("path not found!");
+            return;
+        }
+        Node start = getNode(START_R, START_C);
+        while(cur != start) {
             cheapestPath.add(cur);
             Node cheapestNode = null;
-            float cheapestValue = Float.MAX_VALUE;
-            for(Edge e: cur.edges) {
-                Node to = e.to;
-                if(to.weight < cheapestValue) {
-                    cheapestNode = to;
-                    cheapestValue = to.weight;
+            for(Edge e: cur.incomingEdges) {
+                if(e.weight + e.from.weight == cur.weight) {
+                    cheapestNode = e.from;
                 }
-            }
-            if(cheapestNode == null) {
-                print("Path not found!");
-                return;
             }
             cur = cheapestNode;
         }
-        cheapestPath.add(end);
+        cheapestPath.add(start);
 
     }
 
@@ -229,10 +227,12 @@ class Color {
 class Node {
     float x, y, weight;
     Color color;
-    List<Edge> edges;
+    List<Edge> outgoingEdges;
+    List<Edge> incomingEdges;
     boolean explored;
     public Node(float x, float y) {
-        this.edges = new ArrayList<Edge>();
+        this.outgoingEdges = new ArrayList<Edge>();
+        this.incomingEdges = new ArrayList<Edge>();
         this.x = x;
         this.y = y;
         this.weight = Float.MAX_VALUE;
@@ -251,7 +251,9 @@ class Node {
     }
 
     public void addEdge(Node to, float weight) {
-        edges.add(new Edge(this, to, weight));
+        Edge newEdge = new Edge(this, to, weight);
+        outgoingEdges.add(newEdge);
+        to.incomingEdges.add(newEdge);
     }
 }
 
@@ -259,7 +261,12 @@ class Edge {
     float weight;
     Node from, to;
     public Edge(Node from, Node to, float weight) {
-        this.weight = weight;
+        if(Djikstra.ROUND_EDGE_WEIGHTS) {
+            this.weight = Math.round(weight);
+        } else {
+            this.weight = weight;
+        }
+
         this.from = from;
         this.to = to;
     }
