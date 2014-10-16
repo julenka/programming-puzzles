@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4533e1d-bc63-4b5c-9937-70c00b4bb199" name="Default" comment="Adding project euler problem 51">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project-euler/problem55.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="programming-puzzles.iws" />
