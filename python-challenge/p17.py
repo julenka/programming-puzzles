@@ -23,5 +23,5 @@ for y in range(im_height):
         i += 1
     else:
         print "magenta in row {} not found".format(r)
-
+im.show()
 im_out.show()
