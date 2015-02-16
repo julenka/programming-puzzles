@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b1f2767-687e-4d51-a1fe-ebc032b54082" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/valentines-2015/D.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/valentines-2015/Map.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/valentines-2015/meta.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/valentines-2015/thunder.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/programming-puzzles.iml" afterPath="$PROJECT_DIR$/.idea/programming-puzzles.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/valentines-2015/B.py" afterPath="$PROJECT_DIR$/engagement/B.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/valentines-2015/D.py" afterPath="$PROJECT_DIR$/engagement/D.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/valentines-2015/Map.svg" afterPath="$PROJECT_DIR$/engagement/Map.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/valentines-2015/meta.py" afterPath="$PROJECT_DIR$/engagement/meta.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/valentines-2015/thunder.txt" afterPath="$PROJECT_DIR$/engagement/thunder.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="puzzles.iws" />
@@ -33,7 +32,7 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="B.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/valentines-2015/B.py">
+        <entry file="file://$PROJECT_DIR$/engagement/B.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="705">
               <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="26" />
@@ -43,7 +42,7 @@
         </entry>
       </file>
       <file leaf-file-name="D.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/valentines-2015/D.py">
+        <entry file="file://$PROJECT_DIR$/engagement/D.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="854" max-vertical-offset="1530">
               <caret line="73" column="26" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
@@ -55,7 +54,7 @@
         </entry>
       </file>
       <file leaf-file-name="meta.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/valentines-2015/meta.py">
+        <entry file="file://$PROJECT_DIR$/engagement/meta.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.33284023" vertical-offset="0" max-vertical-offset="676">
               <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
@@ -65,7 +64,7 @@
         </entry>
       </file>
       <file leaf-file-name="thunder.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/valentines-2015/thunder.txt">
+        <entry file="file://$PROJECT_DIR$/engagement/thunder.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
               <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
@@ -75,7 +74,7 @@
         </entry>
       </file>
       <file leaf-file-name="Map.svg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/valentines-2015/Map.svg">
+        <entry file="file://$PROJECT_DIR$/engagement/Map.svg">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="387" max-vertical-offset="1050">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -179,7 +178,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="valentines-2015" />
+              <option name="myItemId" value="engagement" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -449,7 +448,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421078147619</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Engagement puzzle solved!">
+      <created>1424054114717</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1424054114717</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -474,8 +479,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -491,7 +497,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39948782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -515,7 +520,8 @@
     </option>
     <MESSAGE value="Solving problems 145, 205." />
     <MESSAGE value="Solving problem 69 using totient equation woo!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solving problem 69 using totient equation woo!" />
+    <MESSAGE value="Engagement puzzle solved!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Engagement puzzle solved!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -526,7 +532,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/valentines-2015/B.py">
+    <entry file="file://$PROJECT_DIR$/engagement/B.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -602,7 +608,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/valentines-2015/Map.svg">
+    <entry file="file://$PROJECT_DIR$/engagement/Map.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -610,7 +616,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/valentines-2015/thunder.txt">
+    <entry file="file://$PROJECT_DIR$/engagement/thunder.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
@@ -618,7 +624,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/valentines-2015/D.py">
+    <entry file="file://$PROJECT_DIR$/engagement/D.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="854" max-vertical-offset="1530">
           <caret line="73" column="26" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
@@ -628,7 +634,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/valentines-2015/B.py">
+    <entry file="file://$PROJECT_DIR$/engagement/B.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="705">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="26" />
@@ -636,7 +642,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/valentines-2015/meta.py">
+    <entry file="file://$PROJECT_DIR$/engagement/meta.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33284023" vertical-offset="0" max-vertical-offset="676">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
