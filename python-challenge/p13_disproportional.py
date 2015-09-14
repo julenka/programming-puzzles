@@ -18,4 +18,5 @@ def phone(s):
         print "Fault code: %d" % err.faultCode
         print "Fault string: %s" % err.faultString
 
-print phone("Bert")
+if __name__ == '__main__':
+    print phone("Bert")
