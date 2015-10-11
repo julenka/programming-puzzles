@@ -4,10 +4,8 @@
 """
 __author__ = 'julenka'
 from collections import defaultdict
-from collections import deque
+import numpy as np
 
-max_color = 0
-num_colors = 0
 
 def read_tuple_int():
     s = raw_input()
@@ -35,7 +33,6 @@ def get_color(npar, n):
         num_colors += 1
     return c
 
-import numpy as np
 def process_case():
     N, M = read_tuple_int()
     outgoing_edges = defaultdict(list)
@@ -54,7 +51,6 @@ def process_case():
             merge_colors(colors, f_color, t_color)
 
     if num_colors != 1:
-        print num_colors, colors
         return fail()
 
     if out_counts[N] == 0:
