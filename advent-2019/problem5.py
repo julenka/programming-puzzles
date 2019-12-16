@@ -1,6 +1,5 @@
 # problem5.py
 
-
 def init_program():
     infile = "input5.txt"
     # infile = "input5-test.txt"
