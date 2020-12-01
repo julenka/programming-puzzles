@@ -1,6 +1,9 @@
-__author__ = 'julenka'
+#!/usr/bin/env python2
+
+import fileinput
 
 # url to the problem goes here
+
 
 def solve_case_multi(lines):
     return None
@@ -8,17 +11,11 @@ def solve_case_multi(lines):
 def solve_case_single(line):
     return None
 
-# config
-# letter = 'C'
-# letter = 'B'
-letter = 'A'
-# size = 'small'
-size = 'large'
-size = 'tiny'
-input = '%s-%s-practice.in' % (letter,size)
-output = input.replace('.in', '.out')
-lines = (line.strip() for line in open(input).readlines())
-outf = open(output, 'w')
+
+# Input is now coming from system.in
+# output is system.out
+
+lines = (line.strip() for line in fileinput.input())
 num_cases = int(lines.next())
 
 
@@ -47,7 +44,5 @@ for i in range(num_cases):
     result = solve_case_single(line)
     print "Case #%d: %s" % (i + 1, result)
     print >> outf, "Case #%d: %s" % (i + 1, result)
-
-# num_lines1, num_lines2 = [int(x) for x in lines.next().split(' ')]
 
 
