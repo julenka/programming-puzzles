@@ -127,7 +127,6 @@ def solve2(data):
     print(str(nearby_tickets))
 
     num_fields = len(my_ticket)
-    # ith is set of valid constraints
     valid_constraints = list()
 
     for i in range(num_fields):
