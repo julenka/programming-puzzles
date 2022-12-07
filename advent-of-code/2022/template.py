@@ -18,6 +18,6 @@ F11
 '''
 
 data = test_data.strip().split("\n")
-data = get_lines("")
+# data = get_lines("input-.txt")
 
 solve1(data)

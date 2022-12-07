@@ -73,6 +73,7 @@ C Z
 '''
 
 # data = test_data.strip().split("\n")
-data = get_lines("input-02.txt")
+# data = get_lines("input-02.txt")
 
-solve2(data)
+# solve2(data)
+
